@@ -1,0 +1,136 @@
+{
+  "manufacturer": "Espressif Systems",
+  "name": "ESP8266",
+  "pinRows": [
+    {
+      "name": "left",
+      "orientation": "vertical",
+      "pins": [
+        {
+          "functions": ["reset"],
+          "id": 1,
+          "name": "RST",
+          "position": 0
+        },
+        {
+          "functions": ["adc"],
+          "id": 2,
+          "name": "ADC0",
+          "position": 1
+        },
+        {
+          "functions": ["enable"],
+          "id": 3,
+          "name": "EN",
+          "position": 2
+        },
+        {
+          "functions": ["wake", "gpio"],
+          "id": 4,
+          "name": "GPIO16",
+          "position": 3
+        },
+        {
+          "functions": ["sclk", "gpio"],
+          "id": 5,
+          "name": "GPIO14",
+          "position": 4
+        },
+        {
+          "functions": ["miso", "gpio"],
+          "id": 6,
+          "name": "GPIO12",
+          "position": 5
+        },
+        {
+          "functions": ["mosi", "gpio"],
+          "id": 7,
+          "name": "GPIO13",
+          "position": 6
+        },
+        {
+          "functions": ["vcc"],
+          "id": 8,
+          "name": "VCC",
+          "position": 7
+        }
+      ],
+      "pitch": 2,
+      "position": {
+        "x": 0,
+        "y": 8.5
+      },
+      "size": {
+        "height": 1,
+        "width": 1.5
+      }
+    },
+    {
+      "name": "right",
+      "orientation": "vertical",
+      "pins": [
+        {
+          "functions": ["txd0", "gpio"],
+          "id": 9,
+          "name": "GPIO1",
+          "position": 0
+        },
+        {
+          "functions": ["rxd0", "gpio"],
+          "id": 10,
+          "name": "GPIO3",
+          "position": 1
+        },
+        {
+          "functions": ["scl", "gpio"],
+          "id": 11,
+          "name": "GPIO5",
+          "position": 2
+        },
+        {
+          "functions": ["sda", "gpio"],
+          "id": 12,
+          "name": "GPIO4",
+          "position": 3
+        },
+        {
+          "functions": ["flash", "gpio"],
+          "id": 13,
+          "name": "GPIO0",
+          "position": 4
+        },
+        {
+          "functions": ["txd1", "gpio"],
+          "id": 14,
+          "name": "GPIO12",
+          "position": 5
+        },
+        {
+          "functions": ["cs", "txd2", "gpio"],
+          "id": 15,
+          "name": "GPIO13",
+          "position": 6
+        },
+        {
+          "functions": ["gnd"],
+          "id": 16,
+          "name": "GND",
+          "position": 7
+        }
+      ],
+      "pitch": 2,
+      "position": {
+        "x": 14.5,
+        "y": 8.5
+      },
+      "size": {
+        "height": 1,
+        "width": 1.5
+      }
+    }
+  ],
+  "size": {
+    "height": 24,
+    "width": 16
+  }
+}

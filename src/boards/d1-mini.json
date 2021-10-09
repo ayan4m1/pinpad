@@ -1,0 +1,149 @@
+{
+  "color": "#0d4c75",
+  "manufacturer": "LOLIN",
+  "name": "D1 Mini",
+  "pinRows": [
+    {
+      "labelPosition": "left",
+      "name": "left",
+      "orientation": "vertical",
+      "pins": [
+        {
+          "functions": ["reset"],
+          "id": 1,
+          "name": "RST",
+          "position": 0
+        },
+        {
+          "functions": ["adc"],
+          "id": 2,
+          "name": "ADC0",
+          "position": 1
+        },
+        {
+          "functions": ["enable"],
+          "id": 3,
+          "name": "EN",
+          "position": 2
+        },
+        {
+          "functions": ["wake", "gpio"],
+          "id": 4,
+          "name": "GPIO16",
+          "position": 3
+        },
+        {
+          "functions": ["sclk", "gpio"],
+          "id": 5,
+          "name": "GPIO14",
+          "position": 4
+        },
+        {
+          "functions": ["miso", "gpio"],
+          "id": 6,
+          "name": "GPIO12",
+          "position": 5
+        },
+        {
+          "functions": ["mosi", "gpio"],
+          "id": 7,
+          "name": "GPIO13",
+          "position": 6,
+          "side": "left"
+        },
+        {
+          "functions": ["vcc"],
+          "id": 8,
+          "name": "VCC",
+          "position": 7,
+          "side": "left"
+        }
+      ],
+      "pitch": 2.54,
+      "position": {
+        "x": 0,
+        "y": 6
+      },
+      "size": {
+        "height": 2.54,
+        "width": 2.54
+      }
+    },
+    {
+      "labelPosition": "right",
+      "name": "right",
+      "orientation": "vertical",
+      "pins": [
+        {
+          "functions": ["tx", "gpio"],
+          "id": 9,
+          "name": "GPIO1",
+          "position": 0,
+          "side": "right"
+        },
+        {
+          "functions": ["rx", "gpio"],
+          "id": 10,
+          "name": "GPIO3",
+          "position": 1,
+          "side": "right"
+        },
+        {
+          "functions": ["scl", "gpio"],
+          "id": 11,
+          "name": "GPIO5",
+          "position": 2,
+          "side": "right"
+        },
+        {
+          "functions": ["sda", "gpio"],
+          "id": 12,
+          "name": "GPIO4",
+          "position": 3,
+          "side": "right"
+        },
+        {
+          "functions": ["flash", "gpio"],
+          "id": 13,
+          "name": "GPIO0",
+          "position": 4,
+          "side": "right"
+        },
+        {
+          "functions": ["tx", "gpio"],
+          "id": 14,
+          "name": "GPIO12",
+          "position": 5,
+          "side": "right"
+        },
+        {
+          "functions": ["cs", "tx", "gpio"],
+          "id": 15,
+          "name": "GPIO13",
+          "position": 6,
+          "side": "right"
+        },
+        {
+          "functions": ["gnd"],
+          "id": 16,
+          "name": "GND",
+          "position": 7,
+          "side": "right"
+        }
+      ],
+      "pitch": 2.54,
+      "position": {
+        "x": 23.06,
+        "y": 6
+      },
+      "size": {
+        "height": 2.54,
+        "width": 2.54
+      }
+    }
+  ],
+  "size": {
+    "height": 34.2,
+    "width": 25.6
+  }
+}
