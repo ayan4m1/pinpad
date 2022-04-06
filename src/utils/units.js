@@ -12,6 +12,10 @@ export const mmToPx = (
 
 export const useTextWidth = (text) =>
   useMemo(() => {
+    if (typeof document === 'undefined') {
+      return 0;
+    }
+
     const fragment = document.createDocumentFragment();
     const canvas = document.createElement('canvas');
 
