@@ -1,8 +1,11 @@
 {
+  "color": "#0d4c75",
+  "image": "images/boards/esp8266.svg",
   "manufacturer": "Espressif Systems",
   "name": "ESP8266",
   "pinRows": [
     {
+      "labelPosition": "left",
       "name": "left",
       "orientation": "vertical",
       "pins": [
@@ -66,6 +69,7 @@
       }
     },
     {
+      "labelPosition": "right",
       "name": "right",
       "orientation": "vertical",
       "pins": [
@@ -127,10 +131,39 @@
         "height": 1,
         "width": 1.5
       }
+    },
+    {
+      "labelPosition": "bottom",
+      "name": "bottom",
+      "orientation": "horizontal",
+      "pins": [
+        {
+          "functions": ["sdcmd"],
+          "id": 17,
+          "name": "GPIO11",
+          "position": 0
+        },
+        {
+          "functions": ["sdd0"],
+          "id": 18,
+          "name": "GPIO7",
+          "position": 1
+        }
+      ],
+      "pitch": 2,
+      "position": {
+        "x": 4,
+        "y": 12
+      },
+      "size": {
+        "height": 1.5,
+        "width": 1
+      }
     }
   ],
   "size": {
-    "height": 24,
-    "width": 16
+    "height": 24.54484,
+    "scale": 2,
+    "width": 16.96618
   }
 }

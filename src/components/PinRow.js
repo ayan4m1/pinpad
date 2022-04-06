@@ -33,7 +33,7 @@ export default function PinRow({
 
         switch (labelPosition) {
           case 'left':
-            functionPos.x -= pxToMm(50);
+            functionPos.x -= pxToMm(22);
             linePos.x1 *= -1;
             linePos.x2 = 0;
             break;
@@ -57,13 +57,13 @@ export default function PinRow({
             key={pin.id}
             transform={`translate(${mmToPx(pinPos.x)} ${mmToPx(pinPos.y)})`}
           >
-            <Pin index={pin.position} size={pinSize} />
+            <Pin size={pinSize} />
             <line
               x1={mmToPx(linePos.x1)}
               x2={mmToPx(linePos.x2)}
               y1={mmToPx(linePos.y1)}
               y2={mmToPx(linePos.y2)}
-              stroke="red"
+              stroke="#cccccc"
             />
             <PinFunctions
               labelPosition={labelPosition}

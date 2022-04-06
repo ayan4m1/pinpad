@@ -1,50 +1,78 @@
 import PropTypes from 'prop-types';
-import { Fragment } from 'react';
 
 import { FunctionsType, PositionType } from 'types/pin';
 import { getColorForFunction } from 'utils/colors';
-import { mmToPx } from 'utils/units';
+import { useTextWidth } from 'utils/units';
+import PinFunction from './PinFunction';
 
 export default function PinFunctions({
   functions,
   height,
   labelPosition,
-  name,
-  position
+  name
 }) {
+  const omitName =
+    functions.length === 1 && functions[0].toLowerCase() === name.toLowerCase();
+  const nameWidth = useTextWidth(name) + 4;
+
+  let nameX = 0,
+    offset = 0;
+
+  switch (labelPosition) {
+    case 'left':
+      nameX = -nameWidth - 12;
+      break;
+    case 'right':
+      nameX = nameWidth / 2 + 6;
+      break;
+  }
+
+  if (!omitName) {
+    offset += nameWidth + 12;
+  } else {
+    offset += 12;
+  }
+
   return (
-    <g transform={`translate(${mmToPx(position.x)} 0)`}>
-      <rect width={40} height={height} rx={4} fill="black" />
-      <text
-        x={20}
-        y={10}
-        font="DejaVu Sans Mono"
-        fontSize="10px"
-        fill="white"
-        style={{ textAnchor: 'middle' }}
-      >
-        {name}
-      </text>
+    <g transform={`translate(0 0)`}>
+      {!omitName && (
+        <PinFunction
+          x={nameX}
+          y={0}
+          width={nameWidth}
+          height={height}
+          color="#dbebf9"
+          textColor="black"
+          name={name}
+        />
+      )}
       {functions.map((fn, i) => {
         let x = 0,
-          y = 0;
+          y = 0,
+          width = 40;
 
+        const functionName = fn.toUpperCase();
+        width = useTextWidth(functionName) + 4;
+
+        const offsetIndex = omitName ? i : i + 1;
         switch (labelPosition) {
           case 'left':
-            x -= 40 * (i + 1);
+            offset += width;
+            x -= offset;
             break;
           case 'right':
-            x += 40 * (i + 1);
+            offset += width / 2;
+            x += offset;
             break;
           case 'top':
-            y -= 40 * (i + 1);
+            y -= height * offsetIndex;
             break;
           case 'bottom':
-            y += 40 * (i + 1);
+            y += height * offsetIndex;
             break;
         }
 
-        const color = getColorForFunction(fn.toUpperCase());
+        const color = getColorForFunction(functionName);
         let textColor = '#000000';
 
         if (color === '#000000') {
@@ -52,19 +80,16 @@ export default function PinFunctions({
         }
 
         return (
-          <Fragment key={i}>
-            <rect x={x} y={y} width={40} height={height} rx={4} fill={color} />
-            <text
-              x={x + 20}
-              y={y + 10}
-              font="DejaVu Sans Mono"
-              fontSize="10px"
-              fill={textColor}
-              style={{ textAnchor: 'middle' }}
-            >
-              {fn.toUpperCase()}
-            </text>
-          </Fragment>
+          <PinFunction
+            key={i}
+            x={x}
+            y={y}
+            height={height}
+            width={width}
+            color={color}
+            textColor={textColor}
+            name={functionName}
+          />
         );
       })}
     </g>
