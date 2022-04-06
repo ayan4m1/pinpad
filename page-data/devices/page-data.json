@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-devices-js",
+    "path": "/devices/",
+    "result": {"data":{"allBoardsJson":{"edges":[{"node":{"manufacturer":"LOLIN","name":"D1 Mini"}},{"node":{"manufacturer":"Espressif Systems","name":"ESP8266"}},{"node":{"manufacturer":"LOLIN","name":"D32"}}]}},"pageContext":{}},
+    "staticQueryHashes": ["3649515864"]}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpinpad=self.webpackChunkpinpad||[]).push([[678],{7704:function(n,e,i){i.r(e),i.d(e,{default:function(){return t}});var a=i(2796),s=i(5893);function t(){return(0,s.jsx)(a.Z,{title:"Home",children:(0,s.jsx)("h4",{className:"display-4",children:"Pinpad"})})}}}]);
+//# sourceMappingURL=component---src-pages-index-js-7bf5c5ac8ba511f7e82a.js.map

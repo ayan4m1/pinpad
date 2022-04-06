@@ -1,0 +1,141 @@
+{
+  "color": "#0d4c75",
+  "image": "images/boards/d1-mini.svg",
+  "manufacturer": "LOLIN",
+  "name": "D1 Mini",
+  "pinRows": [
+    {
+      "labelPosition": "left",
+      "name": "left",
+      "orientation": "vertical",
+      "pins": [
+        {
+          "functions": ["rst"],
+          "id": 1,
+          "name": "RST",
+          "position": 0
+        },
+        {
+          "functions": ["adc"],
+          "id": 2,
+          "name": "ADC0",
+          "position": 1
+        },
+        {
+          "functions": ["wake"],
+          "id": 3,
+          "name": "GPIO16",
+          "position": 2
+        },
+        {
+          "functions": ["sclk"],
+          "id": 4,
+          "name": "GPIO14",
+          "position": 3
+        },
+        {
+          "functions": ["miso"],
+          "id": 5,
+          "name": "GPIO12",
+          "position": 4
+        },
+        {
+          "functions": ["mosi"],
+          "id": 6,
+          "name": "GPIO13",
+          "position": 5
+        },
+        {
+          "functions": ["cs"],
+          "id": 7,
+          "name": "GPIO15",
+          "position": 6
+        },
+        {
+          "functions": ["3.3v"],
+          "id": 8,
+          "name": "3.3V",
+          "position": 7
+        }
+      ],
+      "pitch": 2.54,
+      "position": {
+        "x": 0,
+        "y": 6
+      },
+      "size": {
+        "height": 2.54,
+        "width": 2.54
+      }
+    },
+    {
+      "labelPosition": "right",
+      "name": "right",
+      "orientation": "vertical",
+      "pins": [
+        {
+          "functions": ["tx"],
+          "id": 9,
+          "name": "GPIO1",
+          "position": 0
+        },
+        {
+          "functions": ["rx"],
+          "id": 10,
+          "name": "GPIO3",
+          "position": 1
+        },
+        {
+          "functions": ["scl"],
+          "id": 11,
+          "name": "GPIO5",
+          "position": 2
+        },
+        {
+          "functions": ["sda"],
+          "id": 12,
+          "name": "GPIO4",
+          "position": 3
+        },
+        {
+          "functions": ["flash"],
+          "id": 13,
+          "name": "GPIO0",
+          "position": 4
+        },
+        {
+          "functions": [],
+          "id": 14,
+          "name": "GPIO12",
+          "position": 5
+        },
+        {
+          "functions": ["gnd"],
+          "id": 15,
+          "name": "GND",
+          "position": 6
+        },
+        {
+          "functions": ["5v"],
+          "id": 16,
+          "name": "5V",
+          "position": 7
+        }
+      ],
+      "pitch": 2.54,
+      "position": {
+        "x": 23.06,
+        "y": 6
+      },
+      "size": {
+        "height": 2.54,
+        "width": 2.54
+      }
+    }
+  ],
+  "size": {
+    "height": 34.21944,
+    "scale": 2,
+    "width": 25.61167
+  }
+}
